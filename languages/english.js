@@ -758,7 +758,7 @@ module.exports = class {
 			CONFIGURATION_MODLOGS: (channelID) => `Moderation logs : ${channelID ? `<#${channelID}>` : "Not defined"}`,
 			CONFIGURATION_SUGGESTIONS: (channelID) => `Suggestions : ${channelID ? `<#${channelID}>` : "Not defined" }`,
 			CONFIGURATION_FORTNITESHOP: (channelID) => `Fortnite Shop : ${channelID ? `<#${channelID}>` : "Not defined" }`,
-			CONFIGURATION_AUTOMOD: (ignoredChannels) => `${ignoredChannels.length > 0 ? `Salon ignorés : ${ignoredChannels.map((ch) => `<#${ch}>`)}` : "Aucun salon ignoré."}`,
+			CONFIGURATION_AUTOMOD: (ignoredChannels) => `${ignoredChannels.length > 0 ? `Ignored channels : ${ignoredChannels.map((ch) => `<#${ch}>`)}` : "No ignored channels."}`,
 			CONFIGURATION_WARNS: (kick, ban) => `${kick ? `**Expulsion**: after **${kick}** warnings.` : "**Expulsion**: Not defined."}\n${ban ? `**Banishment**: after **${ban}** warnings.` : "**Banishment**: Not defined."}`,
 			CONFIGURATION_AUTODELETEMOD: "Auto-deletion of moderation commands enabled",
 
